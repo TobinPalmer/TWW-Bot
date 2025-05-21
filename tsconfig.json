@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "typeRoots": [
+        "./node_modules/@types",
+        "./node_modules/@discordjs/typings"
+    ],
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "outDir": "./dist",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true
+    }
+}

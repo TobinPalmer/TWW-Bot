@@ -1,0 +1,47 @@
+{
+    "type": "module",
+    "lint-staged": {
+        "*.ts": "eslint --cache --fix",
+        "*.{ts,css,md}": "prettier --write"
+    },
+    "scripts": {
+        "prepare": "husky install",
+        "lint": "eslint --cache --fix src",
+        "prettier": "prettier --write src",
+        "compile": "tsc && pnpm run copy",
+        "clean": "rimraf dist/",
+        "copy": "npx copyfiles -u 1 src/.env src/**/*.json dist/",
+        "build": "pnpm run lint && pnpm run prettier && pnpm run clean && pnpm run compile",
+        "start": "npx copyfiles -u 1 src/.env src/**/*.json dist/ && cd dist && node . && cd ..",
+        "dev": "pnpm run clean && tsc-watch --onSuccess \"pnpm run start\"",
+        "prod": "pnpm run build && pnpm run start"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.5.0"
+    },
+    "dependencies": {
+        "@discordjs/rest": "^2.4.3",
+        "discord.js": "^14.18.0",
+        "dotenv": "^16.4.7",
+        "mongodb": "^6.15.0",
+        "mongoose": "^8.12.1"
+    },
+    "devDependencies": {
+        "@eslint/eslintrc": "^3.3.0",
+        "@eslint/js": "^9.22.0",
+        "@tsconfig/node20": "^20.1.4",
+        "@types/node": "^22.13.11",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "globals": "^15.15.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^14.0.1",
+        "prettier": "^3.5.3",
+        "rimraf": "^5.0.10",
+        "tsc-watch": "^6.2.1",
+        "typescript": "^5.8.2"
+    }
+}
