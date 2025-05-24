@@ -1,7 +1,6 @@
 import { REST } from '@discordjs/rest'
 import { RESTPostAPIApplicationCommandsJSONBody, Routes } from 'discord.js'
 import { readdirSync } from 'fs'
-// import { default as config } from '../config.json'
 import { default as config } from '../config.json' with { type: 'json' }
 import type ApplicationCommand from '../templates/ApplicationCommand.js'
 import MessageCommand from '../templates/MessageCommand.js'
@@ -10,11 +9,8 @@ const { TOKEN, CLIENT_ID } = process.env as Record<string, string>
 
 export default new MessageCommand({
     name: 'deploy',
-    description: 'Deploys the slash commands',
+    description: 'Deploys or undeploys the slash commands',
     async execute(message, args): Promise<void> {
-        // if (message.author.id !== OWNER_ID) return
-        // const roles = message.member?.roles.cache
-        // if (!roles || !hasAccessToCommand(roles, [Roles.Owner])) {
         if (
             message.author.id !== '749428779499126815' &&
             message.author.id !== '719201218802614352'
@@ -25,18 +21,28 @@ export default new MessageCommand({
             return
         }
 
-        if (!args[0]) {
+        if (!args[0] || !args[1]) {
             await message.reply({
-                content: `Incorrect number of arguments! The correct format is \`${config.prefix}deploy <guild/global>\``
+                content: `Incorrect number of arguments! The correct format is \`${config.prefix}deploy <deploy|undeploy> <guild|global>\``
             })
             return
         }
 
-        console.log(`Undeploying commands by ${message.author.tag}!}`)
+        const action = args[0].toLowerCase()
+        const scope = args[1].toLowerCase()
 
-        if (args[0].toLowerCase() === 'global') {
+        if (
+            (action !== 'deploy' && action !== 'undeploy') ||
+            (scope !== 'guild' && scope !== 'global')
+        ) {
+            await message.reply({
+                content: `Invalid arguments! The correct format is \`${config.prefix}deploy <deploy|undeploy> <guild|global>\``
+            })
+            return
+        }
+
+        if (action === 'deploy' && scope === 'global') {
             // global deployment
-
             const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
             const commandFiles: string[] = readdirSync('./commands').filter(
                 (file) => file.endsWith('.js') || file.endsWith('.ts')
@@ -54,20 +60,17 @@ export default new MessageCommand({
 
             try {
                 console.log('Started refreshing application (/) commands.')
-
                 await rest.put(Routes.applicationCommands(CLIENT_ID), {
                     body: commands
                 })
-
                 console.log('Successfully reloaded application (/) commands.')
             } catch (error) {
                 console.error(error)
             }
 
-            await message.reply({ content: 'Deploying!' })
-        } else if (args[0].toLowerCase() === 'guild') {
+            await message.reply({ content: 'Deploying globally!' })
+        } else if (action === 'deploy' && scope === 'guild') {
             // guild deployment
-
             const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
             const commandFiles: string[] = readdirSync('./commands').filter(
                 (file) => file.endsWith('.js') || file.endsWith('.ts')
@@ -85,7 +88,6 @@ export default new MessageCommand({
 
             try {
                 console.log('Started refreshing application (/) commands.')
-
                 await rest.put(
                     Routes.applicationGuildCommands(
                         CLIENT_ID,
@@ -95,13 +97,20 @@ export default new MessageCommand({
                         body: commands
                     }
                 )
-
                 console.log('Successfully reloaded application (/) commands.')
             } catch (error) {
                 console.error(error)
             }
 
-            await message.reply({ content: 'Deploying!' })
+            await message.reply({ content: 'Deploying in this guild!' })
+        } else if (action === 'undeploy' && scope === 'global') {
+            // global undeployment
+            await message.client.application?.commands.set([])
+            await message.reply({ content: 'Undeploying globally!' })
+        } else if (action === 'undeploy' && scope === 'guild') {
+            // guild undeployment
+            await message.guild?.commands.set([])
+            await message.reply({ content: 'Undeploying in this guild!' })
         }
     }
 })

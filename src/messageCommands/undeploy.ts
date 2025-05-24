@@ -5,6 +5,7 @@ import MessageCommand from '../templates/MessageCommand.js'
 export default new MessageCommand({
     name: 'undeploy',
     description: 'Undeploys the slash commands',
+
     async execute(message, args): Promise<void> {
         // if (message.author.id !== OWNER_ID) return
         // const roles = message.member?.roles.cache
