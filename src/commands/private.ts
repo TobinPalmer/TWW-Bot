@@ -7,8 +7,7 @@ import ApplicationCommand from '../templates/ApplicationCommand.js'
 export default new ApplicationCommand({
     data: new SlashCommandBuilder()
         .setName('private')
-        .setDescription('Toggle private mode for your requests')
-        .setDefaultMemberPermissions(0),
+        .setDescription('Toggle private mode for your requests'),
 
     execute: async (interaction) => {
         const serverId = interaction.guild?.id
