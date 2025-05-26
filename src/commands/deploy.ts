@@ -30,6 +30,12 @@ export default new ApplicationCommand({
                     { name: 'guild', value: 'guild' },
                     { name: 'global', value: 'global' }
                 )
+        )
+        .addStringOption((option) =>
+            option
+                .setName('server_id')
+                .setDescription('Server ID to deploy/undeploy to (guild only)')
+                .setRequired(false)
         ) as SlashCommandBuilder,
 
     async execute(interaction): Promise<void> {
@@ -48,6 +54,7 @@ export default new ApplicationCommand({
 
         const scope = interaction.options.getString('scope', true)
         const action = interaction.options.getString('action', true)
+        const serverId = interaction.options.getString('server_id', false)
 
         if (action === 'deploy') {
             const commands: RESTPostAPIApplicationCommandsJSONBody[] = []
@@ -81,18 +88,28 @@ export default new ApplicationCommand({
                     })
                 }
             } else if (scope === 'guild') {
+                const targetGuildId = serverId || interaction.guild?.id
+                if (!targetGuildId) {
+                    await interaction.reply({
+                        content:
+                            'No guild ID provided and command not used in a guild.',
+                        ephemeral: true
+                    })
+                    return
+                }
                 try {
-                    await interaction.reply({ content: 'Deploying to guild!' })
+                    await interaction.reply({
+                        content: `Deploying to guild \`${targetGuildId}\`!`
+                    })
                     await rest.put(
                         Routes.applicationGuildCommands(
                             CLIENT_ID,
-                            interaction.guild?.id as string
+                            targetGuildId
                         ),
                         { body: commands }
                     )
                     await interaction.followUp({
-                        content:
-                            'Successfully deployed application (/) commands to this guild.'
+                        content: `Successfully deployed application (/) commands to guild \`${targetGuildId}\`.`
                     })
                 } catch (error) {
                     await interaction.followUp({
@@ -101,7 +118,7 @@ export default new ApplicationCommand({
                 }
             } else {
                 await interaction.reply({
-                    content: `Incorrect arguments! The correct format is \`/deploy <deploy|undeploy> <guild|global>\``,
+                    content: `Incorrect arguments! The correct format is \`/deploy <deploy|undeploy> <guild|global> [server_id]\``,
                     ephemeral: true
                 })
             }
@@ -112,13 +129,46 @@ export default new ApplicationCommand({
                     content: 'Undeployed all global commands.'
                 })
             } else if (scope === 'guild') {
-                await interaction.guild?.commands.set([])
-                await interaction.reply({
-                    content: 'Undeployed all guild commands.'
-                })
+                const targetGuildId = serverId || interaction.guild?.id
+                if (!targetGuildId) {
+                    await interaction.reply({
+                        content:
+                            'No guild ID provided and command not used in a guild.',
+                        ephemeral: true
+                    })
+                    return
+                }
+                // Use REST API to clear guild commands if serverId is provided, otherwise use interaction.guild?.commands.set([])
+                if (serverId) {
+                    const rest = new REST({ version: '10' }).setToken(TOKEN)
+                    try {
+                        await interaction.reply({
+                            content: `Undeploying all commands in guild \`${targetGuildId}\`!`
+                        })
+                        await rest.put(
+                            Routes.applicationGuildCommands(
+                                CLIENT_ID,
+                                targetGuildId
+                            ),
+                            { body: [] }
+                        )
+                        await interaction.followUp({
+                            content: `Undeployed all commands in guild \`${targetGuildId}\`.`
+                        })
+                    } catch (error) {
+                        await interaction.followUp({
+                            content: `Error: ${error as string}`
+                        })
+                    }
+                } else {
+                    await interaction.guild?.commands.set([])
+                    await interaction.reply({
+                        content: 'Undeployed all guild commands.'
+                    })
+                }
             } else {
                 await interaction.reply({
-                    content: `Incorrect arguments! The correct format is \`/deploy <deploy|undeploy> <guild|global>\``,
+                    content: `Incorrect arguments! The correct format is \`/deploy <deploy|undeploy> <guild|global> [server_id]\``,
                     ephemeral: true
                 })
             }
