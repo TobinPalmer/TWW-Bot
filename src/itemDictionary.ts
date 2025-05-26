@@ -45,6 +45,11 @@ export const nonAuctionItems = [
     'Damaged Gun Barrel',
     'Damaged Gun Parts',
     'Damaged Gun Body',
+    'Martini Gun',
+    'Blunderbuss Barrel',
+    'Blunderbuss Parts',
+    'Blunderbuss Body',
+    'Blunderbuss',
     'Pile of Bones',
     'Animal Bones',
     'An Old Boot',
@@ -63,7 +68,12 @@ export const nonAuctionItems = [
     'Aequitas',
     'Frozen Aequitas',
     'Santa Lantern',
-    'Stacked Coal'
+    'Stacked Coal',
+    'Flood Lantern',
+    'Occult Blade',
+    'Skin Walker Spear',
+    'Skin Walker Bow',
+    'Model 3 Lightning'
 ] as const
 
 export const auctionItem = [
@@ -123,26 +133,27 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.INCREASING,
         serialRanges: [
-            { range: [1000000, 5000], price: '13M' },
-            { range: [4999, 4000], price: '13M-13.15M' },
-            { range: [3999, 3000], price: '13.15M-13.3M' },
-            { range: [2999, 2000], price: '13.3M-13.5M' },
-            { range: [1999, 1000], price: '13.6M-14M' },
-            { range: [999, 800], price: '14.75M-15.5M' },
-            { range: [799, 600], price: '15.5M-16.25M' },
-            { range: [599, 400], price: '16.25M-17.25M' },
-            { range: [399, 300], price: '17.5M-18M' },
-            { range: [299, 200], price: '18.5M-19.25M' },
-            { range: [199, 100], price: '20M-21.5M' },
-            { range: [99, 80], price: '32M-34M' },
-            { range: [79, 70], price: '36M-38M' },
-            { range: [69, 60], price: '40M-44M' },
-            { range: [59, 50], price: '47M-50M' },
-            { range: [49, 40], price: '52M-55M' },
-            { range: [39, 30], price: '56M-62M' },
-            { range: [29, 20], price: '64M-69M' },
-            { range: [19, 15], price: '70M-76M' },
-            { range: [14, 10], price: '78M-85M' },
+            { range: [10000, 5000], price: '5.2M' },
+            { range: [4999, 4000], price: '5.3M-5.5M' },
+            { range: [3999, 3000], price: '5.5M-6M' },
+            { range: [2999, 2000], price: '6M-6.4M' },
+            { range: [1999, 1500], price: '6.4M-6.7M' },
+            { range: [1499, 1000], price: '6.7M-7M' },
+            { range: [999, 800], price: '7M-8.5M' },
+            { range: [799, 600], price: '8.5M-10.5M' },
+            { range: [599, 400], price: '10.5M-13.5M' },
+            { range: [399, 300], price: '13.5M-17M' },
+            { range: [299, 200], price: '17M-21M' },
+            { range: [199, 100], price: '21M-27M' },
+            { range: [99, 80], price: '27M-34M' },
+            { range: [79, 70], price: '34M-40M' },
+            { range: [69, 60], price: '40M-47M' },
+            { range: [59, 50], price: '47M-55M' },
+            { range: [49, 40], price: '55M-63M' },
+            { range: [39, 30], price: '63M-70M' },
+            { range: [29, 20], price: '70M-75M' },
+            { range: [19, 15], price: '75M-78M' },
+            { range: [14, 10], price: '78M-80M' },
             { range: [9, 9], price: '100M' },
             { range: [8, 8], price: '110M' },
             { range: [7, 7], price: '125M' },
@@ -162,16 +173,18 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [100000, 25000], price: '620K' },
-            { range: [24999, 20000], price: '620K-655k' },
-            { range: [19999, 15000], price: '655K-665K' },
-            { range: [14999, 10000], price: '670k-690K' },
-            { range: [9999, 8000], price: '700K-725K' },
-            { range: [7999, 6000], price: '725K-775K' },
-            { range: [5999, 4000], price: '775K-820K' },
-            { range: [3999, 3000], price: '820K-875K' },
-            { range: [2999, 2000], price: '875K-950K' },
-            { range: [1999, 1000], price: '1.2M-1.35M' },
+            { range: [100000, 25000], price: '750K' },
+            { range: [24999, 20000], price: '750K-780K' },
+            { range: [19999, 15000], price: '780K-790K' },
+            { range: [14999, 10000], price: '790K-810K' },
+            { range: [9999, 8000], price: '820K-850K' },
+            { range: [7999, 6000], price: '850K-900K' },
+            { range: [5999, 4000], price: '900K-950K' },
+            { range: [3999, 3000], price: '950K-1M' },
+            { range: [2999, 2200], price: '1M-1.1M' },
+            { range: [2199, 1800], price: '1.1M-1.2M' },
+            { range: [1799, 1300], price: '1.2M-1.3M' },
+            { range: [1299, 1000], price: '1.3M-1.4M' },
             { range: [999, 900], price: '1.8M-2M' },
             { range: [899, 800], price: '2M-2.3M' },
             { range: [799, 700], price: '2.3M-2.6M' },
@@ -190,7 +203,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [39, 30], price: '30M-33M' },
             { range: [29, 20], price: '35M-40M' },
             { range: [19, 15], price: '50M-55M' },
-            { range: [14, 10], price: '60M-65M' }
+            { range: [14, 10], price: '60M-70M' }
         ]
     },
     Axegonne: {
@@ -1060,7 +1073,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         officialName: 'Cursed Volcanic Pistol',
-        price: '105k'
+        price: '85k'
     },
 
     'Cursed Lantern': {
@@ -1068,7 +1081,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Cursed Lantern',
-        price: '10k'
+        price: '15k'
     },
 
     'Occult Lantern': {
@@ -1076,7 +1089,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         officialName: 'Occult Lantern',
-        price: '100k'
+        price: '80k'
     },
 
     'Occult Sawed Off': {
@@ -1131,7 +1144,7 @@ export const itemDictionary: ItemDictionary = {
         demand: Demand.EXTREMELY_HIGH,
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
-        price: '80k',
+        price: '70k',
         officialName: 'Frozen Volcanic Rifle'
     },
 
@@ -1148,7 +1161,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Frozen Horn Bow',
-        price: '60k'
+        price: '65k'
     },
 
     'Skeleton Horse Parts': {
@@ -1156,8 +1169,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Skeleton Horse Parts',
-        price: '60k-65k',
-        tradeValue: '60k'
+        price: '60k'
     },
 
     'Stolen Presents': {
@@ -1167,6 +1179,30 @@ export const itemDictionary: ItemDictionary = {
         officialName: 'Stolen Presents',
         price: '1k each',
         tradeValue: '1k'
+    },
+
+    'Skin Walker Spear': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Skin Walker Spear',
+        price: '10k'
+    },
+
+    'Model 3 Lightning': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Model 3 Lightning',
+        price: '20k'
+    },
+
+    'Skin Walker Bow': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Skin Walker Bow',
+        price: '10k'
     },
 
     'Christmas Cookies': {
@@ -1200,7 +1236,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Ancient Relic',
-        price: '60k'
+        price: '55k'
     },
 
     'Frosty Gun Parts': {
@@ -1216,7 +1252,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Barrel',
-        price: '3k'
+        price: '5k'
     },
 
     'Damaged Gun Parts': {
@@ -1224,7 +1260,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Parts',
-        price: '5k'
+        price: '8k'
     },
 
     'Damaged Gun Body': {
@@ -1232,7 +1268,63 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Body',
-        price: '22k'
+        price: '25k'
+    },
+
+    'Martini Gun': {
+        demand: Demand.MEDIUM,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Martini Gun',
+        price: '40k'
+    },
+
+    'Blunderbuss Barrel': {
+        demand: Demand.HIGH,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Damaged Gun Barrel',
+        price: '28k'
+    },
+
+    'Blunderbuss Parts': {
+        demand: Demand.HIGH,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Damaged Gun Parts',
+        price: '40k'
+    },
+
+    'Blunderbuss Body': {
+        demand: Demand.EXTREMELY_HIGH,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Damaged Gun Body',
+        price: '55k'
+    },
+
+    Blunderbuss: {
+        demand: Demand.EXTREMELY_HIGH,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Blunderbuss Gun',
+        price: '125-150k'
+    },
+
+    'Flood Lantern': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Flood Lantern',
+        price: '10k'
+    },
+
+    'Occult Blade': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Occult Blade',
+        price: '10k'
     },
 
     'An Old Boot': {
@@ -1240,7 +1332,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'An Old Boot',
-        price: '1k'
+        price: '200'
     },
 
     'Hudsons Key': {
