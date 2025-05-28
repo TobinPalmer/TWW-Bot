@@ -176,38 +176,41 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
             { range: [100000, 25000], price: '750K' },
-            { range: [24999, 20000], price: '750K-780K' },
-            { range: [19999, 15000], price: '780K-790K' },
-            { range: [14999, 10000], price: '790K-810K' },
-            { range: [9999, 8000], price: '820K-850K' },
-            { range: [7999, 6000], price: '850K-900K' },
-            { range: [5999, 4000], price: '900K-950K' },
-            { range: [3999, 3000], price: '950K-1M' },
-            { range: [2999, 2200], price: '1M-1.1M' },
-            { range: [2199, 1800], price: '1.1M-1.2M' },
-            { range: [1799, 1300], price: '1.2M-1.3M' },
-            { range: [1299, 1000], price: '1.3M-1.4M' },
-            { range: [999, 900], price: '1.8M-2M' },
-            { range: [899, 800], price: '2M-2.3M' },
-            { range: [799, 700], price: '2.3M-2.6M' },
-            { range: [699, 600], price: '2.6M-2.9M' },
-            { range: [599, 500], price: '2.9M-3.2M' },
+            { range: [24999, 20000], price: '750K-700K' },
+            { range: [19999, 15000], price: '780K-825K' },
+            { range: [14999, 10000], price: '825K-900K' },
+            { range: [9999, 9000], price: '900K-925K' },
+            { range: [8999, 8000], price: '925K-950K' },
+            { range: [7999, 7000], price: '950K-975K' },
+            { range: [6999, 6000], price: '975K-1M' },
+            { range: [5999, 5000], price: '1M-1.05M' },
+            { range: [4999, 4000], price: '1.05M-1.1M' },
+            { range: [3999, 3000], price: '1.1M-1.2M' },
+            { range: [2999, 2000], price: '1.2M-1.35M' },
+            { range: [1999, 1000], price: '1.35M-1.4M' },
+            { range: [999, 900], price: '1.6M-1.8M' },
+            { range: [899, 800], price: '1.8M-2.2M' },
+            { range: [799, 700], price: '2.2M-2.5M' },
+            { range: [699, 600], price: '2.5M-2.8M' },
+            { range: [599, 500], price: '2.8M-3.1M' },
             { range: [499, 400], price: '3.2M-3.5M' },
             { range: [399, 300], price: '3.5M-3.8M' },
             { range: [299, 200], price: '3.8M-4.2M' },
             { range: [199, 100], price: '4.2M-4.7M' },
-            { range: [99, 90], price: '16M-17M' },
-            { range: [89, 80], price: '17.5M-18.5M' },
-            { range: [79, 70], price: '19M-20M' },
-            { range: [69, 60], price: '20.5M-22M' },
-            { range: [59, 50], price: '22.5M-24M' },
-            { range: [49, 40], price: '26M-28M' },
-            { range: [39, 30], price: '30M-33M' },
-            { range: [29, 20], price: '35M-40M' },
-            { range: [19, 15], price: '50M-55M' },
-            { range: [14, 10], price: '60M-70M' }
+            { range: [99, 90], price: '5M-6M' },
+            { range: [89, 80], price: '6M-8M' },
+            { range: [79, 70], price: '8M-9M' },
+            { range: [69, 60], price: '9M-10M' },
+            { range: [59, 50], price: '10M-11M' },
+            { range: [49, 40], price: '11M-13M' },
+            { range: [39, 30], price: '13M-15M' },
+            { range: [29, 20], price: '16M-18M' },
+            { range: [19, 15], price: '20M-23M' },
+            { range: [14, 10], price: '25M-30M' },
+            { range: [9, 9], price: '50M' }
         ]
     },
+
     Axegonne: {
         officialName: 'Admirals Axegonne',
         demand: Demand.MEDIUM,
@@ -1256,19 +1259,19 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Blunderbuss Barrel': {
-        demand: Demand.HIGH,
+        demand: Demand.LOW,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Barrel',
-        price: '28k'
+        price: '15k'
     },
 
     'Blunderbuss Parts': {
-        demand: Demand.HIGH,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Parts',
-        price: '40k'
+        price: '20k'
     },
 
     'Blunderbuss Body': {
@@ -1276,7 +1279,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Body',
-        price: '55k'
+        price: '75k'
     },
 
     Blunderbuss: {
