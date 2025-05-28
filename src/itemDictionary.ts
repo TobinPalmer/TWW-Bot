@@ -134,7 +134,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.INCREASING,
         serialRanges: [
-            { range: [5000, 5000], price: '5M' },
+            { range: [10000, 5000], price: '5M' },
             { range: [4999, 4000], price: '5.05M-5.1M' },
             { range: [3999, 3000], price: '5.1M-5.2M' },
             { range: [2999, 2000], price: '5.2M-5.35M' },
