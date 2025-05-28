@@ -265,7 +265,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '150k-160k' },
             { range: [9999, 8000], price: '170k-180k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '260k-290k' },
@@ -297,7 +297,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '160k-175k' },
             { range: [9999, 8000], price: '180k-190k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '350k-415k' },
@@ -328,7 +328,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '160k-175k' },
             { range: [9999, 8000], price: '180k-190k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '300k-350k' },
@@ -359,7 +359,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '160k-175k' },
             { range: [9999, 8000], price: '180k-190k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '300k-350k' },
@@ -422,7 +422,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '150k-160k' },
             { range: [9999, 8000], price: '170k-180k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '260k-290k' },
@@ -485,7 +485,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '150k-160k' },
             { range: [9999, 8000], price: '170k-180k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280k' },
             { range: [999, 800], price: '260k-290k' },
@@ -597,7 +597,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [19999, 10000], price: '160k-175k' },
             { range: [9999, 8000], price: '180k-190k' },
             { range: [7999, 6000], price: '190k-195k' },
-            { range: [5999, 4000], price: '200-210k' },
+            { range: [5999, 4000], price: '200k-210k' },
             { range: [3999, 2000], price: '215k-240k' },
             { range: [1999, 1000], price: '245k-280kk' },
             { range: [999, 800], price: '450k-545k' },
@@ -1024,7 +1024,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Rednose rifle',
-        price: '10-15k',
+        price: '10k-15k',
         tradeValue: '15k'
     },
 
@@ -1284,7 +1284,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss Gun',
-        price: '125-150k'
+        price: '125k-150k'
     },
 
     'Flood Lantern': {
@@ -1430,7 +1430,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Membership Token',
-        price: '25-30k each',
+        price: '25k-30k each',
         tradeValue: '25k'
     },
 
