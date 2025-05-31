@@ -49,7 +49,11 @@ export const nonAuctionItems = [
     'Blunderbuss Barrel',
     'Blunderbuss Parts',
     'Blunderbuss Body',
-    'Blunderbuss',
+    'Blunderbuss White',
+    'Blunderbuss Black & Gold',
+    'Blunderbuss White & Gold',
+    'Blunderbuss Dark Brown',
+    'Blunderbuss Light Brown',
     'Pile of Bones',
     'Animal Bones',
     'An Old Boot',
@@ -198,7 +202,7 @@ export const itemDictionary: ItemDictionary = {
             { range: [299, 200], price: '3.8M-4.2M' },
             { range: [199, 100], price: '4.2M-4.7M' },
             { range: [99, 90], price: '5M-6M' },
-            { range: [89, 80], price: '6M-8M' },
+            { range: [89, 80], price: '7M-8M' },
             { range: [79, 70], price: '8M-9M' },
             { range: [69, 60], price: '9M-10M' },
             { range: [59, 50], price: '10M-11M' },
@@ -636,12 +640,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 60000], price: '15k' },
-            { range: [59999, 30000], price: '15k-20k' },
-            { range: [29999, 20000], price: '20k-25k' },
-            { range: [19999, 8000], price: '25k-30k' },
-            { range: [7999, 3000], price: '30k-35k' },
-            { range: [2999, 1000], price: '35k-40k' },
+            { range: [1000000, 60000], price: '40k' },
+            { range: [59999, 30000], price: '40k-45k' },
+            { range: [29999, 20000], price: '45k-50k' },
+            { range: [19999, 8000], price: '50k-55k' },
+            { range: [7999, 3000], price: '55k-70k' },
+            { range: [2999, 1000], price: '70k-85k' },
             { range: [999, 700], price: '95k-110k' },
             { range: [699, 400], price: '115k-135k' },
             { range: [399, 300], price: '140k-150k' },
@@ -665,12 +669,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 60000], price: '6.5k' },
-            { range: [59999, 30000], price: '10k' },
-            { range: [29999, 20000], price: '14k' },
-            { range: [19999, 8000], price: '12k-15k' },
-            { range: [7999, 3000], price: '15k-20k' },
-            { range: [2999, 1000], price: '25k-28k' },
+            { range: [1000000, 60000], price: '25k' },
+            { range: [59999, 30000], price: '25-30k' },
+            { range: [29999, 20000], price: '30k-35k' },
+            { range: [19999, 8000], price: '35k-40k' },
+            { range: [7999, 3000], price: '40k-50k' },
+            { range: [2999, 1000], price: '50k-60k' },
             { range: [999, 700], price: '80k-95k' },
             { range: [699, 400], price: '96k-115k' },
             { range: [399, 300], price: '116k-125k' },
@@ -694,12 +698,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 40000], price: '6k' },
-            { range: [39999, 15000], price: '6k-12k' },
-            { range: [14999, 7500], price: '12k-16k' },
-            { range: [7499, 5000], price: '16k-20k' },
-            { range: [5000, 2000], price: '20k-25k' },
-            { range: [1999, 1000], price: '25k-30k' },
+            { range: [1000000, 40000], price: '20k' },
+            { range: [39999, 15000], price: '20k-25k' },
+            { range: [14999, 7500], price: '30k-40k' },
+            { range: [7499, 5000], price: '40k-50k' },
+            { range: [5000, 2000], price: '50k-60k' },
+            { range: [1999, 1000], price: '65k-70k' },
             { range: [999, 900], price: '65k-80k' },
             { range: [899, 800], price: '80k-85k' },
             { range: [799, 700], price: '85k-95k' },
@@ -735,12 +739,12 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         officialName: 'Guitar',
         serialRanges: [
-            { range: [1000000, 40000], price: '6k' },
-            { range: [39999, 15000], price: '6k-12k' },
-            { range: [14999, 7500], price: '12k-16k' },
-            { range: [7499, 5000], price: '16k-20k' },
-            { range: [5000, 2000], price: '20k-25k' },
-            { range: [1999, 1000], price: '25k-30k' },
+            { range: [1000000, 40000], price: '20k' },
+            { range: [39999, 15000], price: '20k-25k' },
+            { range: [14999, 7500], price: '30k-40k' },
+            { range: [7499, 5000], price: '40k-50k' },
+            { range: [5000, 2000], price: '50k-60k' },
+            { range: [1999, 1000], price: '65k-70k' },
             { range: [999, 900], price: '65k-80k' },
             { range: [899, 800], price: '80k-85k' },
             { range: [799, 700], price: '85k-95k' },
@@ -778,12 +782,12 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         officialName: 'Fiddle',
         serialRanges: [
-            { range: [1000000, 40000], price: '6k' },
-            { range: [39999, 15000], price: '6k-10k' },
-            { range: [14999, 7500], price: '10k-13k' },
-            { range: [7499, 5000], price: '13k-15k' },
-            { range: [5000, 2000], price: '15k-18k' },
-            { range: [1999, 1000], price: '18k-20k' },
+            { range: [1000000, 40000], price: '20k' },
+            { range: [39999, 15000], price: '20k-25k' },
+            { range: [14999, 7500], price: '30k-40k' },
+            { range: [7499, 5000], price: '40k-50k' },
+            { range: [5000, 2000], price: '50k-60k' },
+            { range: [1999, 1000], price: '65k-70k' },
             { range: [999, 900], price: '60k-75k' },
             { range: [899, 800], price: '75k-80k' },
             { range: [799, 700], price: '80k-90k' },
@@ -1068,7 +1072,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         officialName: 'Occult Lantern',
-        price: '80k'
+        price: '95k'
     },
 
     'Occult Sawed Off': {
@@ -1282,12 +1286,44 @@ export const itemDictionary: ItemDictionary = {
         price: '75k'
     },
 
-    Blunderbuss: {
+    'Blunderbuss White': {
         demand: Demand.EXTREMELY_HIGH,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
-        officialName: 'Blunderbuss Gun',
-        price: '125k-150k'
+        officialName: 'Blunderbuss White',
+        price: '180k'
+    },
+
+    'Blunderbuss Black & Gold': {
+        demand: Demand.EXTREMELY_HIGH,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Blunderbuss Black & Gold',
+        price: '160k'
+    },
+
+    'Blunderbuss White & Gold': {
+        demand: Demand.MEDIUM,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Blunderbuss White & Gold',
+        price: '150k'
+    },
+
+    'Blunderbuss Dark Brown': {
+        demand: Demand.LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Blunderbuss Dark Brown',
+        price: '125k'
+    },
+
+    'Blunderbuss Light Brown': {
+        demand: Demand.EXTREMELY_LOW,
+        stability: Stability.STABLE,
+        trend: Trend.UNAPPLICABLE,
+        officialName: 'Blunderbuss Light Brown',
+        price: '125k'
     },
 
     'Flood Lantern': {
