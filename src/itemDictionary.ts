@@ -51,7 +51,7 @@ export const nonAuctionItems = [
     'Blunderbuss Body',
     'Blunderbuss White',
     'Blunderbuss Black & Gold',
-    'Blunderbuss White & Gold',
+    'Blunderbuss Velvet',
     'Blunderbuss Dark Brown',
     'Blunderbuss Light Brown',
     'Pile of Bones',
@@ -180,7 +180,7 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
             { range: [100000, 25000], price: '750K' },
-            { range: [24999, 20000], price: '750K-700K' },
+            { range: [24999, 20000], price: '750K-780K' },
             { range: [19999, 15000], price: '780K-825K' },
             { range: [14999, 10000], price: '825K-900K' },
             { range: [9999, 9000], price: '900K-925K' },
@@ -1302,11 +1302,11 @@ export const itemDictionary: ItemDictionary = {
         price: '160k'
     },
 
-    'Blunderbuss White & Gold': {
+    'Blunderbuss Velvet': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
-        officialName: 'Blunderbuss White & Gold',
+        officialName: 'Blunderbuss Velvet',
         price: '150k'
     },
 
