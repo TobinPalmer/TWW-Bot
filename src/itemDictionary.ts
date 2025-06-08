@@ -51,7 +51,7 @@ export const nonAuctionItems = [
     'Blunderbuss Body',
     'Blunderbuss White',
     'Blunderbuss Black & Gold',
-    'Blunderbuss Velvet',
+    'Blunderbuss Rosewood',
     'Blunderbuss Dark Brown',
     'Blunderbuss Light Brown',
     'Pile of Bones',
@@ -84,6 +84,7 @@ export const nonAuctionItems = [
 export const auctionItem = [
     'Spitfire Revolving Sniper',
     'Paterson Navy',
+    'Jezail Musket',
     'Axegonne',
     'Prototype Pistol',
     'Lancaster Pistol',
@@ -138,37 +139,37 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.INCREASING,
         serialRanges: [
-            { range: [10000, 5000], price: '5M' },
-            { range: [4999, 4000], price: '5.05M-5.1M' },
-            { range: [3999, 3000], price: '5.1M-5.2M' },
-            { range: [2999, 2000], price: '5.2M-5.35M' },
-            { range: [1999, 1000], price: '5.45M-5.65M' },
-            { range: [999, 800], price: '6.15M-6.35M' },
-            { range: [799, 600], price: '6.45M-6.55M' },
-            { range: [599, 400], price: '6.75M-7M' },
-            { range: [399, 300], price: '7.25M-7.75M' },
-            { range: [299, 200], price: '8M-8.5M' },
-            { range: [199, 150], price: '9M-9.5M' },
-            { range: [149, 100], price: '10M-11M' },
-            { range: [99, 90], price: '12.5M-13.5M' },
-            { range: [89, 80], price: '15M-15.5M' },
-            { range: [79, 70], price: '16M-16.5M' },
-            { range: [69, 60], price: '17M-17.5M' },
-            { range: [59, 50], price: '18.5M-19M' },
-            { range: [49, 40], price: '20M-21.5M' },
-            { range: [39, 30], price: '22.5M-23.5M' },
-            { range: [29, 20], price: '25M-27M' },
-            { range: [19, 15], price: '30M-31M' },
-            { range: [14, 10], price: '33M-35M' },
-            { range: [9, 9], price: '50M' },
-            { range: [8, 8], price: '55M' },
-            { range: [7, 7], price: '77.5M' },
-            { range: [6, 6], price: '83M' },
-            { range: [5, 5], price: '90M' },
-            { range: [4, 4], price: '100M' },
-            { range: [3, 3], price: '110M' },
-            { range: [2, 2], price: '150M' },
-            { range: [1, 1], price: '200M' }
+            { range: [5000, 5000], price: '5.5M' },
+            { range: [4999, 4000], price: '5.5M-5.55M' },
+            { range: [3999, 3000], price: '5.55M-5.6M' },
+            { range: [2999, 2000], price: '5.6M-5.8M' },
+            { range: [1999, 1000], price: '5.9M-6.15M' },
+            { range: [999, 800], price: '7.25M-7.4M' },
+            { range: [799, 600], price: '7.5M-7.7M' },
+            { range: [599, 400], price: '7.9M-8.2M' },
+            { range: [399, 300], price: '8.35M-8.7M' },
+            { range: [299, 200], price: '9.25M-9.75M' },
+            { range: [199, 150], price: '10M-10.5M' },
+            { range: [149, 100], price: '11M-11.5M' },
+            { range: [99, 90], price: '15M-16M' },
+            { range: [89, 80], price: '18M-19M' },
+            { range: [79, 70], price: '20M-21M' },
+            { range: [69, 60], price: '22.5M-23.5M' },
+            { range: [59, 50], price: '25M-27M' },
+            { range: [49, 40], price: '29M-31M' },
+            { range: [39, 30], price: '33M-35.5M' },
+            { range: [29, 20], price: '37.5M-39M' },
+            { range: [19, 15], price: '41M-43M' },
+            { range: [14, 10], price: '45M-50M' },
+            { range: [9, 9], price: '60M' },
+            { range: [8, 8], price: '70M' },
+            { range: [7, 7], price: '85M' },
+            { range: [6, 6], price: '100M' },
+            { range: [5, 5], price: '115M' },
+            { range: [4, 4], price: '125M' },
+            { range: [3, 3], price: '150M' },
+            { range: [2, 2], price: '175M' },
+            { range: [1, 1], price: '250M' }
         ]
     },
 
@@ -179,19 +180,19 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [100000, 25000], price: '750K' },
-            { range: [24999, 20000], price: '750K-780K' },
-            { range: [19999, 15000], price: '780K-825K' },
-            { range: [14999, 10000], price: '825K-900K' },
-            { range: [9999, 9000], price: '900K-925K' },
-            { range: [8999, 8000], price: '925K-950K' },
-            { range: [7999, 7000], price: '950K-975K' },
-            { range: [6999, 6000], price: '975K-1M' },
-            { range: [5999, 5000], price: '1M-1.05M' },
-            { range: [4999, 4000], price: '1.05M-1.1M' },
-            { range: [3999, 3000], price: '1.1M-1.2M' },
-            { range: [2999, 2000], price: '1.2M-1.35M' },
-            { range: [1999, 1000], price: '1.35M-1.4M' },
+            { range: [100000, 25000], price: '875K' },
+            { range: [24999, 20000], price: '875K-900K' },
+            { range: [19999, 15000], price: '900K-925K' },
+            { range: [14999, 10000], price: '925K-950K' },
+            { range: [9999, 9000], price: '975K-1M' },
+            { range: [8999, 8000], price: '1M-1.1M' },
+            { range: [7999, 7000], price: '1.1M-1.15M' },
+            { range: [6999, 6000], price: '1.15M-1.20M' },
+            { range: [5999, 5000], price: '1.20M-1.30M' },
+            { range: [4999, 4000], price: '1.3M-1.35M' },
+            { range: [3999, 3000], price: '1.35M-1.45M' },
+            { range: [2999, 2000], price: '1.5M-1.6M' },
+            { range: [1999, 1000], price: '1.6M-1.65M' },
             { range: [999, 900], price: '1.6M-1.8M' },
             { range: [899, 800], price: '1.8M-2.2M' },
             { range: [799, 700], price: '2.2M-2.5M' },
@@ -212,6 +213,35 @@ export const itemDictionary: ItemDictionary = {
             { range: [19, 15], price: '20M-23M' },
             { range: [14, 10], price: '25M-30M' },
             { range: [9, 9], price: '50M' }
+        ]
+    },
+
+    'Jezail Musket': {
+        officialName: 'Jezail Musket',
+        increasing: false,
+        demand: Demand.HIGH,
+        stability: Stability.UNSTABLE,
+        trend: Trend.UNAPPLICABLE,
+        serialRanges: [
+            { range: [999, 900], price: '1.2M-1.25M' },
+            { range: [899, 800], price: '1.25M-1.3M' },
+            { range: [799, 700], price: '1.3M-1.35M' },
+            { range: [699, 600], price: '1.35M-1.4M' },
+            { range: [599, 500], price: '1.4M-1.45M' },
+            { range: [499, 400], price: '1.55M-1.6M' },
+            { range: [399, 300], price: '1.65M-1.75M' },
+            { range: [299, 200], price: '1.8M-1.9M' },
+            { range: [199, 100], price: '2M-2.25M' },
+            { range: [99, 90], price: '4M-4.5M' },
+            { range: [89, 80], price: '4.5M-5M' },
+            { range: [79, 70], price: '5M-5.5M' },
+            { range: [69, 60], price: '5.5M-6M' },
+            { range: [59, 50], price: '6M-6.5M' },
+            { range: [49, 40], price: '6.5M-7M' },
+            { range: [39, 30], price: '7M-7.5M' },
+            { range: [29, 20], price: '7.5M-8M' },
+            { range: [19, 15], price: '10M-11M' },
+            { range: [14, 10], price: '13M-15M' }
         ]
     },
 
@@ -670,7 +700,7 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
             { range: [1000000, 60000], price: '25k' },
-            { range: [59999, 30000], price: '25-30k' },
+            { range: [59999, 30000], price: '25k-30k' },
             { range: [29999, 20000], price: '30k-35k' },
             { range: [19999, 8000], price: '35k-40k' },
             { range: [7999, 3000], price: '40k-50k' },
@@ -1052,7 +1082,7 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Cursed Volcanic Pistol': {
-        demand: Demand.EXTREMELY_HIGH,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         officialName: 'Cursed Volcanic Pistol',
@@ -1124,7 +1154,7 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Frozen Volcanic Rifle': {
-        demand: Demand.EXTREMELY_HIGH,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         price: '70k',
@@ -1235,7 +1265,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Barrel',
-        price: '5k'
+        price: '3k'
     },
 
     'Damaged Gun Parts': {
@@ -1251,7 +1281,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Body',
-        price: '25k'
+        price: '20k'
     },
 
     'Martini Gun': {
@@ -1302,12 +1332,13 @@ export const itemDictionary: ItemDictionary = {
         price: '160k'
     },
 
-    'Blunderbuss Velvet': {
+    'Blunderbuss Rosewood': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
-        officialName: 'Blunderbuss Velvet',
-        price: '150k'
+        officialName: 'Blunderbuss White & Gold',
+        price: '150k',
+        tradeValue: '150k'
     },
 
     'Blunderbuss Dark Brown': {
@@ -1315,7 +1346,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss Dark Brown',
-        price: '125k'
+        price: '90k'
     },
 
     'Blunderbuss Light Brown': {
@@ -1323,7 +1354,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss Light Brown',
-        price: '125k'
+        price: '90k'
     },
 
     'Flood Lantern': {
@@ -1409,19 +1440,19 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Snake Venom': {
-        demand: Demand.MEDIUM,
+        demand: Demand.HIGH,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Snake Venom',
-        price: '525k'
+        price: '600k'
     },
 
     'Stacked Coal': {
-        demand: Demand.LOW,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Stacked Coal',
-        price: '35k'
+        price: '20k'
     },
 
     'Legendary Pelts': {
