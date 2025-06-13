@@ -139,7 +139,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.INCREASING,
         serialRanges: [
-            { range: [5000, 5000], price: '5.5M' },
+            { range: [10000, 5000], price: '5.5M' },
             { range: [4999, 4000], price: '5.5M-5.55M' },
             { range: [3999, 3000], price: '5.55M-5.6M' },
             { range: [2999, 2000], price: '5.6M-5.8M' },
@@ -1319,7 +1319,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss White',
-        price: '180k'
+        price: '160k'
     },
 
     'Blunderbuss Black & Gold': {
@@ -1327,7 +1327,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss Black & Gold',
-        price: '160k'
+        price: '140k'
     },
 
     'Blunderbuss Rosewood': {
@@ -1335,8 +1335,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Blunderbuss White & Gold',
-        price: '150k',
-        tradeValue: '150k'
+        price: '125k'
     },
 
     'Blunderbuss Dark Brown': {
@@ -1450,7 +1449,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Stacked Coal',
-        price: '20k'
+        price: '30k'
     },
 
     'Legendary Pelts': {
@@ -1498,7 +1497,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Membership Token',
-        price: '25k-30k each',
+        price: '20k-25k each',
         tradeValue: '25k'
     },
 
