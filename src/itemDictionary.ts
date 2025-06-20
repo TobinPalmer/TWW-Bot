@@ -217,9 +217,9 @@ export const itemDictionary: ItemDictionary = {
 
     'Jezail Musket': {
         officialName: 'Jezail Musket',
-        demand: Demand.HIGH,
+        demand: Demand.LOW,
         stability: Stability.UNSTABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         serialRanges: [
             { range: [999, 900], price: '900k-925k' },
             { range: [899, 800], price: '925k-950k' },
@@ -230,16 +230,16 @@ export const itemDictionary: ItemDictionary = {
             { range: [399, 300], price: '1.175M-1.2M' },
             { range: [299, 200], price: '1.25M-1.3M' },
             { range: [199, 100], price: '1.3M-1.45M' },
-            { range: [99, 90], price: '2.5M-2.8M' },
-            { range: [89, 80], price: '2.9M-3.3M' },
-            { range: [79, 70], price: '3.4M-3.8M' },
-            { range: [69, 60], price: '3.9M-4.3M' },
-            { range: [59, 50], price: '4.4M-4.8M' },
-            { range: [49, 40], price: '5M-5.5M' },
-            { range: [39, 30], price: '6M-6.5M' },
-            { range: [29, 20], price: '6.7M-7.2M' },
-            { range: [19, 15], price: '8M-8.5M' },
-            { range: [14, 10], price: '9M-9.7M' }
+            { range: [99, 90], price: '2.5M-2.7M' },
+            { range: [89, 80], price: '2.8M-3M' },
+            { range: [79, 70], price: '3.15M-3.3M' },
+            { range: [69, 60], price: '3.4M-3.7M' },
+            { range: [59, 50], price: '3.9M-4.3M' },
+            { range: [49, 40], price: '4.45M-4.9M' },
+            { range: [39, 30], price: '5.2M-5.6M' },
+            { range: [29, 20], price: '5.9M-6.5M' },
+            { range: [19, 15], price: '7M-7.75M' },
+            { range: [14, 10], price: '8M-9M' }
         ]
     },
 
@@ -1088,9 +1088,9 @@ export const itemDictionary: ItemDictionary = {
     'Cursed Volcanic Pistol': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
-        trend: Trend.INCREASING,
+        trend: Trend.DECREASING,
         officialName: 'Cursed Volcanic Pistol',
-        price: '85k'
+        price: '75k'
     },
 
     'Cursed Lantern': {
@@ -1160,13 +1160,13 @@ export const itemDictionary: ItemDictionary = {
     'Frozen Volcanic Rifle': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
-        trend: Trend.INCREASING,
-        price: '70k',
+        trend: Trend.DECREASING,
+        price: '60k',
         officialName: 'Frozen Volcanic Rifle'
     },
 
     'Frozen Axe': {
-        demand: Demand.MEDIUM,
+        demand: Demand.LOW,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Frozen Axe',
@@ -1299,65 +1299,65 @@ export const itemDictionary: ItemDictionary = {
     'Blunderbuss Barrel': {
         demand: Demand.LOW,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
-        officialName: 'Damaged Gun Barrel',
-        price: '15k'
+        trend: Trend.DECREASING,
+        officialName: 'Blunderbuss Barrel',
+        price: '10k'
     },
 
     'Blunderbuss Parts': {
-        demand: Demand.MEDIUM,
+        demand: Demand.LOW,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
-        officialName: 'Damaged Gun Parts',
-        price: '20k'
+        trend: Trend.DECREASING,
+        officialName: 'Blunderbuss Parts',
+        price: '15k'
     },
 
     'Blunderbuss Body': {
-        demand: Demand.EXTREMELY_HIGH,
+        demand: Demand.HIGH,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
-        officialName: 'Damaged Gun Body',
-        price: '75k'
+        trend: Trend.DECREASING,
+        officialName: 'Blunderbuss Body',
+        price: '45k'
     },
 
     'Blunderbuss White': {
-        demand: Demand.EXTREMELY_HIGH,
+        demand: Demand.HIGH,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Blunderbuss White',
-        price: '160k'
+        price: '100k'
     },
 
     'Blunderbuss Black & Gold': {
-        demand: Demand.EXTREMELY_HIGH,
+        demand: Demand.HIGH,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Blunderbuss Black & Gold',
-        price: '140k'
+        price: '80k'
     },
 
     'Blunderbuss Rosewood': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Blunderbuss White & Gold',
-        price: '125k'
+        price: '75k'
     },
 
     'Blunderbuss Dark Brown': {
         demand: Demand.LOW,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Blunderbuss Dark Brown',
-        price: '90k'
+        price: '65k'
     },
 
     'Blunderbuss Light Brown': {
         demand: Demand.EXTREMELY_LOW,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Blunderbuss Light Brown',
-        price: '90k'
+        price: '60k'
     },
 
     'Flood Lantern': {
