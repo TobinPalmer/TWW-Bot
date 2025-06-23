@@ -45,7 +45,6 @@ export const nonAuctionItems = [
     'Damaged Gun Barrel',
     'Damaged Gun Parts',
     'Damaged Gun Body',
-    'Martini Gun',
     'Blunderbuss Barrel',
     'Blunderbuss Parts',
     'Blunderbuss Body',
@@ -139,11 +138,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.INCREASING,
         serialRanges: [
-            { range: [10000, 5000], price: '5.5M' },
-            { range: [4999, 4000], price: '5.5M-5.55M' },
-            { range: [3999, 3000], price: '5.55M-5.6M' },
-            { range: [2999, 2000], price: '5.6M-5.8M' },
-            { range: [1999, 1000], price: '5.9M-6.15M' },
+            { range: [6999, 6000], price: '4.1M' },
+            { range: [5999, 5000], price: '4.3M' },
+            { range: [4999, 4000], price: '4.3M-4.35M' },
+            { range: [3999, 3000], price: '4.35M-4.6M' },
+            { range: [2999, 2000], price: '4.6M-4.8M' },
+            { range: [1999, 1000], price: '4.9M-5.15M' },
             { range: [999, 800], price: '7.25M-7.4M' },
             { range: [799, 600], price: '7.5M-7.7M' },
             { range: [599, 400], price: '7.9M-8.2M' },
@@ -1269,7 +1269,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Barrel',
-        price: '3k'
+        price: '2.5k'
     },
 
     'Damaged Gun Parts': {
@@ -1277,7 +1277,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Parts',
-        price: '8k'
+        price: '5k'
     },
 
     'Damaged Gun Body': {
@@ -1285,15 +1285,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Body',
-        price: '20k'
-    },
-
-    'Martini Gun': {
-        demand: Demand.MEDIUM,
-        stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
-        officialName: 'Martini Gun',
-        price: '40k'
+        price: '15k'
     },
 
     'Blunderbuss Barrel': {
@@ -1317,7 +1309,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.DECREASING,
         officialName: 'Blunderbuss Body',
-        price: '45k'
+        price: '40k'
     },
 
     'Blunderbuss White': {
@@ -1499,7 +1491,7 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Membership Token': {
-        demand: Demand.LOW,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Membership Token',
