@@ -730,12 +730,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 40000], price: '20k' },
-            { range: [39999, 15000], price: '20k-25k' },
-            { range: [14999, 7500], price: '30k-40k' },
-            { range: [7499, 5000], price: '40k-50k' },
-            { range: [5000, 2000], price: '50k-60k' },
-            { range: [1999, 1000], price: '65k-70k' },
+            { range: [1000000, 40000], price: '10k' },
+            { range: [39999, 15000], price: '10k-15k' },
+            { range: [14999, 7500], price: '20k-30k' },
+            { range: [7499, 5000], price: '30k-45k' },
+            { range: [5000, 2000], price: '45k-55k' },
+            { range: [1999, 1000], price: '60k-70k' },
             { range: [999, 900], price: '65k-80k' },
             { range: [899, 800], price: '80k-85k' },
             { range: [799, 700], price: '85k-95k' },
@@ -814,12 +814,12 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         officialName: 'Fiddle',
         serialRanges: [
-            { range: [1000000, 40000], price: '20k' },
-            { range: [39999, 15000], price: '20k-25k' },
-            { range: [14999, 7500], price: '30k-40k' },
-            { range: [7499, 5000], price: '40k-50k' },
-            { range: [5000, 2000], price: '50k-60k' },
-            { range: [1999, 1000], price: '65k-70k' },
+            { range: [1000000, 40000], price: '10k' },
+            { range: [39999, 15000], price: '10k-15k' },
+            { range: [14999, 7500], price: '20k-30k' },
+            { range: [7499, 5000], price: '30k-40k' },
+            { range: [5000, 2000], price: '45k-55k' },
+            { range: [1999, 1000], price: '60k-70k' },
             { range: [999, 900], price: '60k-75k' },
             { range: [899, 800], price: '75k-80k' },
             { range: [799, 700], price: '80k-90k' },
@@ -897,11 +897,11 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 60000], price: '2k' },
-            { range: [59999, 20000], price: '2k-3k' },
-            { range: [20000, 7500], price: '3k-5k' },
-            { range: [7500, 2000], price: '5k-10k' },
-            { range: [1999, 1000], price: '10k-15k' },
+            { range: [1000000, 60000], price: '7k' },
+            { range: [59999, 20000], price: '7k-9k' },
+            { range: [20000, 7500], price: '9k-15k' },
+            { range: [7500, 2000], price: '15k-20k' },
+            { range: [1999, 1000], price: '20k-25k' },
             { range: [999, 900], price: '65k-70k' },
             { range: [899, 800], price: '70k-75k' },
             { range: [799, 700], price: '80k-85k' },
@@ -1021,29 +1021,27 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
-            { range: [1000000, 500000], price: '1k' },
-            { range: [499999, 100000], price: '1k-2k' },
-            { range: [99999, 50000], price: '2k-3k' },
-            { range: [49999, 10000], price: '3k-5k' },
-            { range: [9999, 5000], price: '5k-8k' },
-            { range: [4999, 1000], price: '10k-25k' },
-            { range: [999, 900], price: '60k-70k' },
-            { range: [899, 800], price: '70k-85k' },
-            { range: [799, 700], price: '85k-105k' },
-            { range: [699, 600], price: '105k-130k' },
-            { range: [599, 500], price: '130k-175k' },
-            { range: [499, 400], price: '175k-225k' },
-            { range: [399, 300], price: '220k-290k' },
-            { range: [299, 200], price: '285k-435k' },
-            { range: [199, 100], price: '430k-580k' },
-            { range: [99, 80], price: '1M-1.3M' },
-            { range: [79, 60], price: '1.3M-2.3M' },
-            { range: [59, 50], price: '2.3M-2.5M' },
-            { range: [49, 40], price: '2.5M-2.8M' },
-            { range: [39, 30], price: '2.8M-3.5M' },
-            { range: [29, 20], price: '3.5M-5M' },
-            { range: [19, 15], price: '5M-7M' },
-            { range: [14, 10], price: '7M-10M' },
+            { range: [80000, 50000], price: '10k-13k' },
+            { range: [49999, 10000], price: '13k-18k' },
+            { range: [9999, 5000], price: '20k-23k' },
+            { range: [4999, 1000], price: '23k-25k' },
+            { range: [999, 900], price: '50k-55k' },
+            { range: [899, 800], price: '55k-65k' },
+            { range: [799, 700], price: '65k-80k' },
+            { range: [699, 600], price: '80k-95k' },
+            { range: [599, 500], price: '95k-120k' },
+            { range: [499, 400], price: '120k-150k' },
+            { range: [399, 300], price: '150k-180k' },
+            { range: [299, 200], price: '180k-250k' },
+            { range: [199, 100], price: '250k-350k' },
+            { range: [99, 80], price: '600k-700k' },
+            { range: [79, 60], price: '700k-900k' },
+            { range: [59, 50], price: '950k-1.15M' },
+            { range: [49, 40], price: '1.2-1.4M' },
+            { range: [39, 30], price: '1.45M-1.7M' },
+            { range: [29, 20], price: '1.9M-2.5M' },
+            { range: [19, 15], price: '2.6M-2.9M' },
+            { range: [14, 10], price: '3M-4M' },
             { range: [9, 9], price: '25M' },
             { range: [8, 8], price: '30M' },
             { range: [7, 7], price: '35M' },
@@ -1063,24 +1061,24 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Rednose rifle',
-        price: '10k-15k',
-        tradeValue: '15k'
+        price: '13.5k'
     },
 
     'Pile of Bones': {
-        demand: Demand.EXTREMELY_LOW,
+        demand: Demand.LOW,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Pile of Bones',
-        price: '$50 per bone unless the stack is 31-50 in which case it is $1.5M-2M'
+        price: '$50 per bone unless the stack is 31-50 in which case it is $1M'
     },
 
     'Animal Bones': {
-        demand: Demand.EXTREMELY_LOW,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Animal Bones',
-        price: '$3k-5k per bone unless the stack is 50 or 1, in which case the value varies heavily'
+        price: '3k per bone, 150k for a stack of 50',
+        tradeValue: '3k'
     },
 
     'Cursed Volcanic Pistol': {
@@ -1088,7 +1086,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.DECREASING,
         officialName: 'Cursed Volcanic Pistol',
-        price: '75k'
+        price: '80k'
     },
 
     'Cursed Lantern': {
@@ -1104,7 +1102,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.INCREASING,
         officialName: 'Occult Lantern',
-        price: '95k'
+        price: '90k'
     },
 
     'Occult Sawed Off': {
@@ -1159,7 +1157,7 @@ export const itemDictionary: ItemDictionary = {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.DECREASING,
-        price: '60k',
+        price: '55k',
         officialName: 'Frozen Volcanic Rifle'
     },
 
@@ -1174,13 +1172,13 @@ export const itemDictionary: ItemDictionary = {
     'Frozen Horn Bow': {
         demand: Demand.MEDIUM,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Frozen Horn Bow',
-        price: '65k'
+        price: '45k'
     },
 
     'Skeleton Horse Parts': {
-        demand: Demand.HIGH,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Skeleton Horse Parts',
@@ -1209,7 +1207,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Model 3 Lightning',
-        price: '20k'
+        price: '15k'
     },
 
     'Skin Walker Bow': {
@@ -1249,9 +1247,9 @@ export const itemDictionary: ItemDictionary = {
     'Ancient Relic': {
         demand: Demand.HIGH,
         stability: Stability.STABLE,
-        trend: Trend.UNAPPLICABLE,
+        trend: Trend.DECREASING,
         officialName: 'Ancient Relic',
-        price: '55k'
+        price: '45k'
     },
 
     'Frosty Gun Parts': {
@@ -1433,7 +1431,7 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Snake Venom': {
-        demand: Demand.HIGH,
+        demand: Demand.MEDIUM,
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Snake Venom',
