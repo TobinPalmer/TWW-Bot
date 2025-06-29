@@ -429,7 +429,7 @@ export async function execute(
         }
 
         // temporary disable low serials
-        if (parsedSerial < 10) {
+        if (parsedSerial < 20) {
             await sendReply(
                 interaction,
                 ':warning: Low serials are temporarly disabled',
