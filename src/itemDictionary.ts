@@ -138,12 +138,12 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.DECREASING,
         serialRanges: [
-            { range: [6999, 6000], price: '3.4M' },
-            { range: [5999, 5000], price: '3.5M' },
-            { range: [4999, 4000], price: '3.5M-3.6M' },
-            { range: [3999, 3000], price: '3.6M-3.7M' },
-            { range: [2999, 2000], price: '3.7M-3.8M' },
-            { range: [1999, 1000], price: '3.9M-4.05M' },
+            { range: [6999, 6000], price: '2.5M' },
+            { range: [5999, 5000], price: '2.6M' },
+            { range: [4999, 4000], price: '2.7M-2.8M' },
+            { range: [3999, 3000], price: '2.9M-3M' },
+            { range: [2999, 2000], price: '3.1M-3.2M' },
+            { range: [1999, 1000], price: '3.3M-3.4M' },
             { range: [999, 800], price: '7.25M-7.4M' },
             { range: [799, 600], price: '7.5M-7.7M' },
             { range: [599, 400], price: '7.9M-8.2M' },
@@ -181,18 +181,18 @@ export const itemDictionary: ItemDictionary = {
         trend: Trend.UNAPPLICABLE,
         serialRanges: [
             { range: [100000, 25000], price: '900K' },
-            { range: [24999, 20000], price: '900K-915K' },
-            { range: [19999, 15000], price: '915K-935K' },
-            { range: [14999, 10000], price: '935K-965k' },
-            { range: [9999, 9000], price: '965k-1M' },
-            { range: [8999, 8000], price: '1M-1.05M' },
-            { range: [7999, 7000], price: '1.05M-1.1M' },
-            { range: [6999, 6000], price: '1.1M-1.15M' },
-            { range: [5999, 5000], price: '1.15M-1.2M' },
-            { range: [4999, 4000], price: '1.2M-1.25M' },
-            { range: [3999, 3000], price: '1.25M-1.32M' },
-            { range: [2999, 2000], price: '1.35M-1.42M' },
-            { range: [1999, 1000], price: '1.47M-1.6M' },
+            { range: [24999, 20000], price: '950K-1M' },
+            { range: [19999, 15000], price: '1M-1.05M' },
+            { range: [14999, 10000], price: '1.05M-1.1M' },
+            { range: [9999, 9000], price: '1.1M-1.125M' },
+            { range: [8999, 8000], price: '1.125M-1.15M' },
+            { range: [7999, 7000], price: '1.15M-1.175M' },
+            { range: [6999, 6000], price: '1.175M-1.2M' },
+            { range: [5999, 5000], price: '1.2M-1.225M' },
+            { range: [4999, 4000], price: '1.25M-1.275M' },
+            { range: [3999, 3000], price: '1.275M-1.35M' },
+            { range: [2999, 2000], price: '1.35M-1.4M' },
+            { range: [1999, 1000], price: '1.4M-1.6M' },
             { range: [999, 900], price: '1.8M-2M' },
             { range: [899, 800], price: '2M-2.2M' },
             { range: [799, 700], price: '2.2M-2.5M' },
@@ -221,7 +221,8 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.UNSTABLE,
         trend: Trend.DECREASING,
         serialRanges: [
-            { range: [1999, 1000], price: '600k-625k' },
+            { range: [3000, 2000], price: '300k-350k' },
+            { range: [1999, 1000], price: '350k-400k' },
             { range: [999, 800], price: '625k-650k' },
             { range: [799, 600], price: '650k-700k' },
             { range: [599, 400], price: '715k-775k' },
@@ -846,12 +847,12 @@ export const itemDictionary: ItemDictionary = {
             { range: [399, 300], price: '160k-200k' },
             { range: [299, 200], price: '200k-250k' },
             { range: [199, 100], price: '250k-300k' },
-            { range: [99, 80], price: '750k-825k' },
-            { range: [79, 60], price: '850k-1M' },
-            { range: [59, 50], price: '1.1M-1.2M' },
-            { range: [49, 40], price: '1.25M-1.35M' },
-            { range: [39, 30], price: '1.4M-1.5M' },
-            { range: [29, 20], price: '1.55M-1.75M' },
+            { range: [99, 80], price: '1M-1.2M' },
+            { range: [79, 60], price: '1.2M-1.4M' },
+            { range: [59, 50], price: '1.4M-1.6M' },
+            { range: [49, 40], price: '1.6M-1.8M' },
+            { range: [39, 30], price: '2M-2.2M' },
+            { range: [29, 20], price: '2.2M-2.5M' },
             { range: [19, 15], price: '8M-9M' },
             { range: [14, 10], price: '10M-13M' },
             { range: [9, 9], price: '25M' },
@@ -1181,7 +1182,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Ceremonial Dagger',
-        price: '6.5k'
+        price: '5k'
     },
 
     'Zombie Bear Pelt': {
@@ -1245,8 +1246,8 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Stolen Presents',
-        price: '1.5k each',
-        tradeValue: '1.5k'
+        price: '2k each',
+        tradeValue: '2k'
     },
 
     'Skin Walker Spear': {
@@ -1300,7 +1301,7 @@ export const itemDictionary: ItemDictionary = {
     },
 
     'Ancient Relic': {
-        demand: Demand.HIGH,
+        demand: Demand.LOW,
         stability: Stability.STABLE,
         trend: Trend.DECREASING,
         officialName: 'Ancient Relic',
@@ -1320,7 +1321,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Barrel',
-        price: '2k'
+        price: '2.5k'
     },
 
     'Damaged Gun Parts': {
@@ -1328,7 +1329,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Parts',
-        price: '3.5k'
+        price: '7k'
     },
 
     'Damaged Gun Body': {
@@ -1336,7 +1337,7 @@ export const itemDictionary: ItemDictionary = {
         stability: Stability.STABLE,
         trend: Trend.UNAPPLICABLE,
         officialName: 'Damaged Gun Body',
-        price: '8k'
+        price: '20k'
     },
 
     'Blunderbuss Barrel': {
