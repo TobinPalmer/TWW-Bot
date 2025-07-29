@@ -429,10 +429,10 @@ export async function execute(
         }
 
         // temporary disable low serials
-        if (parsedSerial < 20) {
+        if (parsedSerial < 1000) {
             await sendReply(
                 interaction,
-                ':warning: Low serials are temporarly disabled',
+                ':warning: Please ping `@value helper` in <#1398377467869397042> for any serials below 1000. This may change in the future.',
                 true
             )
             return
