@@ -41,7 +41,7 @@
         "lint-staged": "^14.0.1",
         "prettier": "^3.5.3",
         "rimraf": "^5.0.10",
-        "tsc-watch": "^6.2.1",
+        "tsc-watch": "^7.2.0",
         "typescript": "^5.8.2"
     }
 }
